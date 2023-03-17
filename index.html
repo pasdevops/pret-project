@@ -8,6 +8,12 @@
   <!-- <link rel="stylesheet" href="generics.css"> -->
   <!-- YOUR STYLES -->
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(".navebar-content").click(function () {
+      $(this).toggleClass("active");
+    });
+  </script>
 
   <body>
     <header>
@@ -25,82 +31,84 @@
                     alt="* PRET *"
                 /></a>
               </div>
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="https://www.pret.co.uk/en-GB/orderonline"
-                    >Order Online</a
+              <div class="menu-nav-container">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="https://www.pret.co.uk/en-GB/orderonline"
+                      >Order Online</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/our-menu">Menu</a>
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/shop-finder"
+                      >Find A Pret</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/about-pret">About</a>
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/orderonline"
+                      >Veggie Pret</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/pretcoffeesub"
+                      >Coffee Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/pret-perks-rewards"
+                      >Pret Perks</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.pret.co.uk/en-GB/pret-jobs">Jobs</a>
+                  </li>
+                  <li></li>
+                </ul>
+                <div class="sign-in">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 29 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-current css-qpql1a e1wqtxnc3"
+                    aria-hidden="true"
                   >
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/our-menu">Menu</a>
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/shop-finder"
-                    >Find A Pret</a
+                    <path
+                      d="M14.5435 27.9995C22.2754 27.9995 28.5435 21.7315 28.5435 13.9995C28.5435 6.26752 22.2754 -0.000488281 14.5435 -0.000488281C6.81147 -0.000488281 0.543457 6.26752 0.543457 13.9995C0.543457 21.7315 6.81147 27.9995 14.5435 27.9995Z"
+                      class="text-current"
+                      fill="#FAF9FA"
+                    ></path>
+                    <path
+                      d="M14.5435 15.2722C17.3552 15.2722 19.6345 12.9929 19.6345 10.1813C19.6345 7.36967 17.3552 5.09039 14.5435 5.09039C11.7319 5.09039 9.45264 7.36967 9.45264 10.1813C9.45264 12.9929 11.7319 15.2722 14.5435 15.2722Z"
+                      class="text-current"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    ></path>
+                    <path
+                      d="M23.4525 23.6327C23.4525 20.8211 21.1731 19.0905 18.3616 19.0905H10.7252C7.91355 19.0905 5.63428 20.8211 5.63428 23.6327"
+                      class="text-current"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    ></path>
+                    <path
+                      d="M27.7935 13.9995C27.7935 21.3173 21.8612 27.2495 14.5435 27.2495C7.22568 27.2495 1.29346 21.3173 1.29346 13.9995C1.29346 6.68174 7.22568 0.749512 14.5435 0.749512C21.8612 0.749512 27.7935 6.68174 27.7935 13.9995Z"
+                      class="text-current"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://auth.pret.com/login?state=hKFo2SB0N2pkNnFUQlNUaGt2bnVDQW42d1k1ZnhNUk9jb3FWLaFupWxvZ2luo3RpZNkgU3hwd184V2VORGRlN3hmSXh1NmxLUHpweVM0T24xMkGjY2lk2SB5QURFN2pYRllmVzJmc2E2UFlSMmtGZmUzRWJxd2g1Qg&client=yADE7jXFYfW2fsa6PYR2kFfe3Ebqwh5B&protocol=oauth2&audience=https%3A%2F%2Fapi1.pret.com%2F&locale=en-GB&scope=openid%20profile%20email%20offline_access&response_type=code&response_mode=query&nonce=Ln50LlptZGNyRGlNU3BGY0RHLUNzbVc4YkdmUFpJSXRZaFlLZU9PUlc1RQ%3D%3D&redirect_uri=https%3A%2F%2Fwww.pret.co.uk%2Fauth%2Factions%2Fcomplete-signin%3Flocale%3Den-GB&code_challenge=jUQezWetZuW6bYSGYPRYBUiApPO8D-0ST4dsj6AopSo&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMjAuMSJ9#/"
+                    class="sign-in-link"
+                    >Sign In</a
                   >
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/about-pret">About</a>
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/orderonline"
-                    >Veggie Pret</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/pretcoffeesub"
-                    >Coffee Subscription</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/pret-perks-rewards"
-                    >Pret Perks</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.pret.co.uk/en-GB/pret-jobs">Jobs</a>
-                </li>
-                <li></li>
-              </ul>
-              <div class="sign-in">
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="text-current css-qpql1a e1wqtxnc3"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M14.5435 27.9995C22.2754 27.9995 28.5435 21.7315 28.5435 13.9995C28.5435 6.26752 22.2754 -0.000488281 14.5435 -0.000488281C6.81147 -0.000488281 0.543457 6.26752 0.543457 13.9995C0.543457 21.7315 6.81147 27.9995 14.5435 27.9995Z"
-                    class="text-current"
-                    fill="#FAF9FA"
-                  ></path>
-                  <path
-                    d="M14.5435 15.2722C17.3552 15.2722 19.6345 12.9929 19.6345 10.1813C19.6345 7.36967 17.3552 5.09039 14.5435 5.09039C11.7319 5.09039 9.45264 7.36967 9.45264 10.1813C9.45264 12.9929 11.7319 15.2722 14.5435 15.2722Z"
-                    class="text-current"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  ></path>
-                  <path
-                    d="M23.4525 23.6327C23.4525 20.8211 21.1731 19.0905 18.3616 19.0905H10.7252C7.91355 19.0905 5.63428 20.8211 5.63428 23.6327"
-                    class="text-current"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  ></path>
-                  <path
-                    d="M27.7935 13.9995C27.7935 21.3173 21.8612 27.2495 14.5435 27.2495C7.22568 27.2495 1.29346 21.3173 1.29346 13.9995C1.29346 6.68174 7.22568 0.749512 14.5435 0.749512C21.8612 0.749512 27.7935 6.68174 27.7935 13.9995Z"
-                    class="text-current"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  ></path>
-                </svg>
-                <a
-                  href="https://auth.pret.com/login?state=hKFo2SB0N2pkNnFUQlNUaGt2bnVDQW42d1k1ZnhNUk9jb3FWLaFupWxvZ2luo3RpZNkgU3hwd184V2VORGRlN3hmSXh1NmxLUHpweVM0T24xMkGjY2lk2SB5QURFN2pYRllmVzJmc2E2UFlSMmtGZmUzRWJxd2g1Qg&client=yADE7jXFYfW2fsa6PYR2kFfe3Ebqwh5B&protocol=oauth2&audience=https%3A%2F%2Fapi1.pret.com%2F&locale=en-GB&scope=openid%20profile%20email%20offline_access&response_type=code&response_mode=query&nonce=Ln50LlptZGNyRGlNU3BGY0RHLUNzbVc4YkdmUFpJSXRZaFlLZU9PUlc1RQ%3D%3D&redirect_uri=https%3A%2F%2Fwww.pret.co.uk%2Fauth%2Factions%2Fcomplete-signin%3Flocale%3Den-GB&code_challenge=jUQezWetZuW6bYSGYPRYBUiApPO8D-0ST4dsj6AopSo&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMjAuMSJ9#/"
-                  class="sign-in-link"
-                  >Sign In</a
-                >
+                </div>
               </div>
             </div>
           </div>
@@ -152,8 +160,18 @@
             subscribe!
           </p>
           <div class="app-store">
-            <a href="https://apps.apple.com/app/id1530370563?mt=8" target="_blank"> <img src="./images/app-store-two.png" alt="app-store"></a>
-             <a href="https://apps.apple.com/app/id1530370563?mt=8" target="_blank"> <img src="./images/google-play-one.png" alt="google-play"></a>
+            <a
+              href="https://apps.apple.com/app/id1530370563?mt=8"
+              target="_blank"
+            >
+              <img src="./images/app-store-two.png" alt="app-store"
+            /></a>
+            <a
+              href="https://apps.apple.com/app/id1530370563?mt=8"
+              target="_blank"
+            >
+              <img src="./images/google-play-one.png" alt="google-play"
+            /></a>
           </div>
         </div>
       </section>
@@ -282,7 +300,10 @@
             </div>
             <div class="grid-item">
               <a href="#">
-                <img src="./images/menu/sandwich-wrapp.jpg" alt="sandwich-wrapp" />
+                <img
+                  src="./images/menu/sandwich-wrapp.jpg"
+                  alt="sandwich-wrapp"
+                />
                 <p>Sandwiches,and wraps</p>
               </a>
             </div>

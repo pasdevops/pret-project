@@ -27,26 +27,29 @@ header .container-fluid .navebar-content {
 header .container-fluid .navebar-content .navbar-header .header-logo img {
   max-width: 120px;
 }
-header .container-fluid .navebar-content .navbar-nav {
+header .container-fluid .navebar-content .menu-nav-container {
   display: flex;
 }
-header .container-fluid .navebar-content .navbar-nav li {
+header .container-fluid .navebar-content .menu-nav-container .navbar-nav {
+  display: flex;
+}
+header .container-fluid .navebar-content .menu-nav-container .navbar-nav li {
   list-style: none;
   margin-right: 15px;
 }
-header .container-fluid .navebar-content .navbar-nav li a {
+header .container-fluid .navebar-content .menu-nav-container .navbar-nav li a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
 }
-header .container-fluid .navebar-content .navbar-nav li a:hover {
+header .container-fluid .navebar-content .menu-nav-container .navbar-nav li a:hover {
   color: #8a082c;
 }
-header .container-fluid .navebar-content .sign-in {
+header .container-fluid .navebar-content .menu-nav-container .sign-in {
   display: flex;
   align-items: center;
 }
-header .container-fluid .navebar-content .sign-in a {
+header .container-fluid .navebar-content .menu-nav-container .sign-in a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
@@ -168,6 +171,7 @@ header .container-fluid .navebar-content .sign-in a {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 80px;
+  text-align: center;
 }
 .menu-container .grid-container {
   display: grid;
@@ -254,4 +258,110 @@ footer .footer-bottom img {
 footer .footer-bottom .footer-logo-content {
   margin-left: 10px;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  header .container-fluid .navebar-content .menu-nav-container {
+    display: block;
+  }
+  header .container-fluid .navebar-content .menu-nav-container:after {
+    content: "||||";
+  }
+  header .container-fluid .navebar-content .menu-nav-container .nav.navbar-nav {
+    display: none;
+  }
+  header .container-fluid .navebar-content .menu-nav-container .sign-in {
+    display: none;
+  }
+  header .container-fluid .navebar-content .menu-nav-container.active {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+  }
+  header .container-fluid .navebar-content .menu-nav-container.active:after {
+    content: "||||";
+    position: absolute;
+    top: -40px;
+    right: 30px;
+  }
+  header .container-fluid .navebar-content .menu-nav-container.active .nav.navbar-nav {
+    display: block;
+  }
+  header .container-fluid .navebar-content .menu-nav-container.active .sign-in {
+    display: block;
+  }
+  .left-image-container {
+    display: block;
+    max-width: 100%;
+  }
+  .left-image-container img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .right-image-container {
+    display: block;
+    max-width: 100%;
+  }
+  .right-image-container img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .pret-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .pret-container .pret-menu-container ul {
+    display: block;
+    padding-left: 0;
+  }
+  .pret-container .pret-menu-container ul li {
+    margin-top: 20px;
+  }
+  .pret-container .pret-menu-container ul .middle {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+  }
+  .menu-container {
+    max-width: 100%;
+  }
+  .menu-container .grid-container {
+    display: block;
+  }
+  .menu-container .grid-container .grid-item {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .menu-container .grid-container .grid-item a img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+  }
+  footer .main-footer {
+    max-width: 100%;
+  }
+  footer .main-footer .footer-menu {
+    display: block;
+  }
+  footer .main-footer .footer-menu .menu {
+    display: block;
+  }
+  footer .main-footer .footer-menu .menu .list {
+    padding-left: 27px;
+  }
+  footer .main-footer .footer-menu .footer-social {
+    margin-left: 27px;
+  }
+  footer .footer-bottom {
+    display: block;
+    padding-left: 27px;
+  }
+  footer .footer-bottom img {
+    width: 100px;
+  }
+  footer .footer-bottom .footer-logo-content {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
