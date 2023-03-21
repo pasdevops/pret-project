@@ -261,11 +261,26 @@ footer .footer-bottom .footer-logo-content {
 }
 
 @media only screen and (max-width: 600px) {
-  header .container-fluid .navebar-content .menu-nav-container {
+  header .navbar-toggle {
+    cursor: pointer;
+    float: right;
+    margin: 5px 15px 0 0;
+  }
+  header .navbar-toggle span {
+    background-color: #000;
+    display: block;
+    height: 2px;
+    margin: 4px;
+    width: 25px;
+  }
+  header .container-fluid .navebar-content .menu-nav-container #menu-nav-container.show {
     display: block;
   }
-  header .container-fluid .navebar-content .menu-nav-container:after {
-    content: "||||";
+  header .container-fluid .navebar-content .menu-nav-container #menu-nav-container.show li {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
   }
   header .container-fluid .navebar-content .menu-nav-container .nav.navbar-nav {
     display: none;
@@ -286,6 +301,9 @@ footer .footer-bottom .footer-logo-content {
     right: 30px;
   }
   header .container-fluid .navebar-content .menu-nav-container.active .nav.navbar-nav {
+    display: block;
+  }
+  header .container-fluid .navebar-content .menu-nav-container.active .nav.navbar-nav .show {
     display: block;
   }
   header .container-fluid .navebar-content .menu-nav-container.active .sign-in {
